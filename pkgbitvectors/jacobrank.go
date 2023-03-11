@@ -7,7 +7,7 @@ import (
 )
 
 func rankData(bv *bitvector.BitVector) ([]int, [][]int) {
-	/* This function creates two data sets for finding the rank of a bit vector.
+	/* This function creates two data sets for finding the 1 rank of a bit vector.
 	The rank of the chunks and the rank of the sub-chunks based on Jacobson's rank.
 	*/
 
@@ -53,6 +53,11 @@ func rankData(bv *bitvector.BitVector) ([]int, [][]int) {
 }
 
 func Rank(bv *bitvector.BitVector, idx int) int {
+	/*
+		This function finds the 1 rank of of a bitvector at index idx.
+		The function uses the rank data created using the previous function.
+	*/
+
 	n := bv.Length()                                     // bitvector length
 	chunk_len := int(math.Pow(math.Log2(float64(n)), 2)) // chunk length
 	sub_chunk_len := int(0.5 * math.Log2(float64(n)))    // sub-chunk length
