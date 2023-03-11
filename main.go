@@ -3,14 +3,19 @@ package main
 import (
 	"fmt"
 
+	"github.com/IsabelF98/CMSC701_PA2/pkgbitvectors"
 	"github.com/dropbox/godropbox/container/bitvector"
 )
 
 func main() {
-	data := "banana"
-	n := 15
+	data := "bananasareyummy"
+	n := 100
 	bv := bitvector.NewBitVector([]byte(data), n)
-	for i := 0; i < n; i++ {
-		fmt.Println(bv.Element(i))
-	}
+
+	// for i := 0; i < n; i++ {
+	// 	fmt.Println(bv.Element(i))
+	// }
+	// fmt.Println(" ")
+
+	fmt.Println(pkgbitvectors.Rank(bv, 14))
 }
