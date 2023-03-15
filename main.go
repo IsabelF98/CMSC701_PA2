@@ -17,5 +17,7 @@ func main() {
 	// }
 	// fmt.Println(" ")
 
-	fmt.Println(pkgbitvectors.Rank(bv, 14))
+	r := pkgbitvectors.RankSupport(bv)
+	fmt.Println(r.Rank(43))
+
 }
