@@ -13,8 +13,9 @@ type RankStruct struct {
 }
 
 func RankSupport(bv *bitvector.BitVector) *RankStruct {
-	/* This function creates two data sets for finding the 1 rank of a bit vector.
-	The rank of the chunks and the rank of the sub-chunks based on Jacobson's rank.
+	/*
+		This function creates two data sets for finding the 1 rank of a bit vector.
+		The rank of the chunks and the rank of the sub-chunks based on Jacobson's rank.
 	*/
 
 	n := bv.Length()                                     // bitvector length

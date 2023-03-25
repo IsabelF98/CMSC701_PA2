@@ -7,7 +7,7 @@ import (
 func (r *RankStruct) Rank(idx int) int {
 	/*
 		This function finds the 1 rank of of a bitvector at index idx.
-		The function uses the rank data created using the previous function.
+		The function uses the rank data created using the Jacobson rank.
 	*/
 
 	bv := r.BV                                           // bitvector
