@@ -31,13 +31,9 @@ func (r *RankStruct) Rank(idx int) int {
 }
 
 func (r *RankStruct) Overhead() int {
-	bv := r.BV
 	cumulative_rank := r.CumulativeRank
 	relative_cumu_rank := r.RelCumulRank
-
-	size := bv.Length() + cumulative_rank.Length() + relative_cumu_rank.Length()
-
-	return size
+	return cumulative_rank.Length() + relative_cumu_rank.Length()
 }
 
 // func (r *RankStruct) Save(filename string) {
