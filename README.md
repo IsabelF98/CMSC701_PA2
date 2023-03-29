@@ -7,11 +7,11 @@ March 28, 2022
 * External Packages Used: github.com/dropbox/godropbox/container/bitvector
 
 ## Rank
-* RankSupport(bv): Jacobson rank structure, input is a bit-vecotor (bv) created using the package linked above and returns a rank support structure (rank_struct). *rank_struct=RankSupport(bv)*
+* RankSupport(bv): Jacobson rank structure, input is a bit-vecotor (bv) created using the package linked above and returns a rank support structure (rank_struct). Call: *rank_struct=RankSupport(bv)*
 
-* Rank(idx): Returns the rank as an index (rank) at a given index (not inclusive). Operated on a rank support structure (rank_struct). *rank=rank_struct.Rank(idx)*
+* Rank(idx): Returns the rank as an index (rank) at a given index (not inclusive). Operated on a rank support structure (rank_struct). Call: *rank=rank_struct.Rank(idx)*
 
-* Overhead: Returns the amount of overhead space (overhead) as an integer stored in rank support structure (rank_struct). *overhead=rank_struct.Overhead()*
+* Overhead: Returns the amount of overhead space (overhead) as an integer stored in rank support structure (rank_struct). Call: *overhead=rank_struct.Overhead()*
 
 ## Select
 * Select(rank): Returns the index (idx) as an integer of the first instance of the given rank value (rank). Operated on a rank support structure (rank_struct). Call: *idx=rank_struct.Select(rank)*
